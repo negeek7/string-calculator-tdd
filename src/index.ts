@@ -3,7 +3,7 @@ export function add(nums: string) :number {
     if(!nums || nums === ",") return 0;
 
     // different delimiter
-    let delimiter = /, | \n /;
+    let delimiter = /,|\n/;
 
     let splitNums = nums.split(delimiter);
     let result = 0;
