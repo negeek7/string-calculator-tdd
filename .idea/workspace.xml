@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c46e61c1-6028-4cd2-8cd8-86c0a68f03e7" name="Changes" comment="typescript init">
-      <change afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sum.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/sum.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="c46e61c1-6028-4cd2-8cd8-86c0a68f03e7" name="Changes" comment="typescript init" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1730975679371</updated>
       <workItem from="1730975680809" duration="44000" />
-      <workItem from="1730975733846" duration="3198000" />
+      <workItem from="1730975733846" duration="3495000" />
     </task>
     <task id="LOCAL-00001" summary="typescript init">
       <option name="closed" value="true" />
