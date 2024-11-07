@@ -8,7 +8,6 @@ export function add(nums: string) :number {
     for(let number of splitNums) {
         result += parseInt(number);
     }
-
     return result;
 }
 
