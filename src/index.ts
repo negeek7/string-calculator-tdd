@@ -31,6 +31,7 @@ export function add(nums: string) :number {
         return result;
     } catch (error) {
         console.log(error);
+        throw error;
     }
 }
 

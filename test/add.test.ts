@@ -37,14 +37,15 @@ test("should throw error if NaN is passed in string", () => {
     }
 })
 
+// 7
 test("should throw an exception of negative number is passed", () => {
-    // expect(add("1,2,3,-4")).toBeInstanceOf(Error);
-    try {
-        add('1,2,3,-4,-5,-6')
-    } catch (error: any) {
-        expect(error).toBeInstanceOf(Error);
-        expect(error.message).toBe("Invalid number: a")
-    }
+    expect(() => add("1,2,3,-4")).toThrow("negative numbers not allowed -4");
+    // try {
+    //     add('1,2,3,-4,-5,-6')
+    // } catch (error: any) {
+    //     expect(error).toBeInstanceOf(Error);
+    //     expect(error.message).toBe("Invalid number: a")
+    // }
 })
 
 
