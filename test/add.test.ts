@@ -51,6 +51,3 @@ test("numbers bigger than 1000 should be ignored", () => {
 test("delimiters can be of any length", () => {
     expect(calculator.add("//***\n1***2***3")).toBe(6);
 });
-
-
-
