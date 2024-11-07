@@ -2,7 +2,10 @@ export function add(nums: string) :number {
 
     if(!nums || nums === ",") return 0;
 
-    let splitNums = nums.split(",");
+    // different delimiter
+    let delimiter = /, | \n /;
+
+    let splitNums = nums.split(delimiter);
     let result = 0;
 
     for(let number of splitNums) {

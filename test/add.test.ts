@@ -17,4 +17,8 @@ test("should return the number for single digit string", () => {
     expect(add("1")).toBe(1);
 });
 
+// 4
+test("should handle new lines between numbers", () => {
+    expect(add("1\n,2,3,4")).toBe(10);
+})
 
