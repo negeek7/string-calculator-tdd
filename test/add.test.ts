@@ -45,3 +45,12 @@ test("numbers bigger than 1000 should be ignored", () => {
 });
 
 
+// Delimiters can be of any length with the following
+// format: “//[delimiter]\n” for example: “//[***]\n1***2***3” should return 6
+// 9
+test("delimiters can be of any length", () => {
+    expect(calculator.add("//***\n1***2***3")).toBe(6);
+});
+
+
+
