@@ -23,6 +23,7 @@ export class StringCalculator {
                 if(num < 0) {
                     negativeNumbers.push(num);
                 }
+                if(num > 1000) continue;
                 result += num;
             }
 

@@ -39,4 +39,9 @@ test("should throw an exception of negative number is passed", () => {
     expect(() => calculator.add("1,2,3,-4")).toThrow("negative numbers not allowed -4");
 })
 
+// 8
+test("numbers bigger than 1000 should be ignored", () => {
+    expect(calculator.add("1,2,3,4,1001,5,1002")).toBe(15);
+});
+
 
