@@ -1,51 +1,42 @@
 import {test, expect} from '@jest/globals';
-import {add} from "../src";
+import {StringCalculator} from "../src";
+
+const calculator = new StringCalculator();
 
 // 1
 test('should return 0 for empty string', () => {
-    expect(add(",")).toBe(0);
-    expect(add("")).toBe(0);
+    expect(calculator.add(",")).toBe(0);
+    expect(calculator.add("")).toBe(0);
 });
 
 // 2
 test('should add all the numbers in string', () => {
-    expect(add("1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16")).toBe(136);
+    expect(calculator.add("1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16")).toBe(136);
 });
 
 // 3
 test("should return the number for single digit string", () => {
-    expect(add("1")).toBe(1);
+    expect(calculator.add("1")).toBe(1);
 });
 
 // 4
 test("should handle new lines between numbers", () => {
-    expect(add("1\n2,3,4")).toBe(10);
+    expect(calculator.add("1\n2,3,4")).toBe(10);
 })
 
 // 5
 test("should support different delimiters", () => {
-    expect(add("//;\n1;2")).toBe(3);
+    expect(calculator.add("//;\n1;2")).toBe(3);
 })
 
 // 6
 test("should throw error if NaN is passed in string", () => {
-    try {
-        add('1,2,3,a,4')
-    } catch (error: any) {
-        expect(error).toBeInstanceOf(Error);
-        expect(error.message).toBe("Invalid number: a")
-    }
+    expect(() => calculator.add("1,2,3,a,4")).toThrow("Invalid number: a")
 })
 
 // 7
 test("should throw an exception of negative number is passed", () => {
-    expect(() => add("1,2,3,-4")).toThrow("negative numbers not allowed -4");
-    // try {
-    //     add('1,2,3,-4,-5,-6')
-    // } catch (error: any) {
-    //     expect(error).toBeInstanceOf(Error);
-    //     expect(error.message).toBe("Invalid number: a")
-    // }
+    expect(() => calculator.add("1,2,3,-4")).toThrow("negative numbers not allowed -4");
 })
 
 
