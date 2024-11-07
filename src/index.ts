@@ -12,13 +12,21 @@ export function add(nums: string) :number {
         }
         let result = 0;
         let splitNums = nums.split(delimiter);
+        let negativeNumbers: number[] = [];
 
         for(let number of splitNums) {
             let num = Number(number);
             if(isNaN(num)) {
                 throw new Error(`Invalid number: ${number}`);
             }
+            if(num < 0) {
+                negativeNumbers.push(num);
+            }
             result += num;
+        }
+
+        if(negativeNumbers.length > 0) {
+            throw new Error(`negative numbers not allowed ${negativeNumbers.join(",")}.`)
         }
         return result;
     } catch (error) {
