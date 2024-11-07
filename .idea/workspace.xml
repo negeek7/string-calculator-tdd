@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c46e61c1-6028-4cd2-8cd8-86c0a68f03e7" name="Changes" comment="typescript init" />
+    <list default="true" id="c46e61c1-6028-4cd2-8cd8-86c0a68f03e7" name="Changes" comment="typescript init">
+      <change beforePath="$PROJECT_DIR$/test/sum.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/sum.test.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,9 +62,22 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Jest.adds 1 + 2 to equal 3">
+  <component name="RunManager" selected="Jest.adds 1 + 2 to equal 3 (1)">
+    <configuration name="adds 1 + 2 to equal 3 (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/sum.test.ts" />
+      <test-names>
+        <test-name value="adds 1 + 2 to equal 3" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="adds 1 + 2 to equal 3" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <envs />
       <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/test/sum.test.ts" />
@@ -83,6 +98,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.adds 1 + 2 to equal 3 (1)" />
         <item itemvalue="Jest.adds 1 + 2 to equal 3" />
         <item itemvalue="npm.dev" />
       </list>
@@ -105,7 +121,7 @@
       <option name="presentableId" value="Default" />
       <updated>1730975679371</updated>
       <workItem from="1730975680809" duration="44000" />
-      <workItem from="1730975733846" duration="3495000" />
+      <workItem from="1730975733846" duration="3799000" />
     </task>
     <task id="LOCAL-00001" summary="typescript init">
       <option name="closed" value="true" />
@@ -120,6 +136,12 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/jest.config.js" />
+        <option value="$PROJECT_DIR$/test/sum.test.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
