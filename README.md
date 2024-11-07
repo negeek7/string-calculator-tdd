@@ -1,6 +1,6 @@
-# calculator-tdd
+# string-calculator-tdd
 
-To run the prject:
+To run the projct:
 1) Run `npm i`;
-2) Look at the scripts @ `package.json` file
-3) For testing (jest), run `npm run test`
+2) Look at the scripts in `package.json` file
+3) For testing purpose (jest), run `npm run test`
