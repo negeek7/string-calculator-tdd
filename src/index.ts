@@ -1,24 +1,29 @@
 export function add(nums: string) :number {
+    try {
+        if(!nums || nums === ",") return 0;
+        // different delimiter
+        let delimiter: any = /[,\n]/;
 
-    if(!nums || nums === ",") return 0;
+        // custom delimiter
+        if(nums.startsWith("//")){
+            let result = nums.split("\n");
+            delimiter = result[0].substring(2);
+            nums = result[1];
+        }
+        let result = 0;
+        let splitNums = nums.split(delimiter);
 
-    // different delimiter
-    let delimiter: any = /[,\n]/;
-
-    if(nums.startsWith("//")){
-        let result = nums.split("\n");
-        delimiter = result[0].substring(2);
-
-        nums = result[1];
+        for(let number of splitNums) {
+            let num = Number(number);
+            if(isNaN(num)) {
+                throw new Error(`Invalid number: ${number}`);
+            }
+            result += num;
+        }
+        return result;
+    } catch (error) {
+        console.log(error);
     }
-
-    let splitNums = nums.split(delimiter);
-    let result = 0;
-
-    for(let number of splitNums) {
-        result += parseInt(number);
-    }
-    return result;
 }
 
 

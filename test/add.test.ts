@@ -27,3 +27,13 @@ test("should support different delimiters", () => {
     expect(add("//;\n1;2")).toBe(3);
 })
 
+// 6
+test("should throw error if NaN is passed in string", () => {
+    try {
+        add('1,2,3,a,4')
+    } catch (error: any) {
+        expect(error).toBeInstanceOf(Error);
+        expect(error.message).toBe("Invalid number: a")
+    }
+})
+
