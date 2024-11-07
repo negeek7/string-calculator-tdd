@@ -1,5 +1,5 @@
 "use strict";
 const greet = (name) => {
-    console.log(`Hello there ${name}`);
+    return `Hello there ${name}`;
 };
-greet("Sona");
+console.log(greet("Harshiiet"));
